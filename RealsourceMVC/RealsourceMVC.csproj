@@ -982,6 +982,7 @@
     <Content Include="Views\Shared\_NavbarAdmin.cshtml" />
     <Content Include="Views\Shared\_SidebarAdmin.cshtml" />
     <Content Include="Views\Shared\_SidebarToDo.cshtml" />
+    <Content Include="Views\Shared\_SidebarTheme.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
