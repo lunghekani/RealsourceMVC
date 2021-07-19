@@ -978,6 +978,9 @@
     <Content Include="Scripts\vendors\summernote\dist\font\summernote291f.woff" />
     <Content Include="Scripts\vendors\summernote\dist\font\summernoted41d.eot" />
     <Content Include="Views\Shared\_AuthLayout.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Shared\_NavbarAdmin.cshtml" />
+    <Content Include="Views\Shared\_SidebarAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
