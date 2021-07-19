@@ -977,6 +977,7 @@
     <Content Include="Scripts\vendors\summernote\dist\font\summernote291f.ttf" />
     <Content Include="Scripts\vendors\summernote\dist\font\summernote291f.woff" />
     <Content Include="Scripts\vendors\summernote\dist\font\summernoted41d.eot" />
+    <Content Include="Views\Shared\_AuthLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

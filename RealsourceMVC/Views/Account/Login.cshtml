@@ -5,31 +5,9 @@
 }
 
 @{
-    Layout = null;
+    Layout = "/Views/Shared/_AuthLayout.cshtml";
 }
-@*@Styles.Render("~/Content/login/")*@
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Real Source</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="/Scripts/vendors/iconfonts/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="/Scripts/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="/Scripts/vendors/css/vendor.bundle.addons.css">
-    <!-- endinject -->
-    <!-- plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <link rel="stylesheet" href="~/Content/style.css">
-    <!-- endinject -->
-    <link rel="shortcut icon" href="~/Content/images/favicon.png" />
-</head>
-
-<div class="container-scroller">
-    <div class="container-fluid page-body-wrapper full-page-wrapper">
-        <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
             <div class="row flex-grow">
                 <div class="col-lg-6 d-flex align-items-center justify-content-center">
                     <div class="auth-form-transparent text-left p-3">
@@ -80,45 +58,30 @@
                                     @Html.ActionLink("Forgot password?", "ForgotPassword", new { @class = "auth-link text-black" })
                                 </div>
                                 <div class="my-3">
-                                    <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit">LOGIN</button>
-                                </div>
-                                <section id="socialLoginForm">
-                                    @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-                                </section>
-                                
-                                <div class="text-center mt-4 font-weight-light">
-                                    Don't have an account? @Html.ActionLink("Register as a new user", "Register")
+                                    <button class="btn btn-block btn-primary btn-lg" type="submit">LOGIN</button>
                                 </div>
 
+
                                 @* Enable this once you have account confirmation enabled for password reset functionality
-                        <p>
-                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
-                        </p>*@
+                <p>
+                    @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                </p>*@
                             }
                         </section>
+                        <section id="socialLoginForm">
+                            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+                        </section>
+
+                        <div class="text-center mt-4 font-weight-light">
+                            Don't have an account? @Html.ActionLink("Register as a new user", "Register")
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 login-half-bg d-flex flex-row">
                     <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2021  All rights reserved.</p>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- plugins:js -->
-<script src="/Scripts/vendors/js/vendor.bundle.base.js"></script>
-<script src="/Scripts/vendors/js/vendor.bundle.addons.js"></script>
-<!-- endinject -->
-<!-- inject:js -->
-<script src="/Scripts/js/off-canvas.js"></script>
-<script src="/Scripts/js/hoverable-collapse.js"></script>
-<script src="/Scripts/js/misc.js"></script>
-<script src="/Scripts/js/settings.js"></script>
-<script src="/Scripts/js/todolist.js"></script>
-<!-- endinject -->
-
+        
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
-    @*@Scripts.Render("~/Scripts/login/")*@
 }
