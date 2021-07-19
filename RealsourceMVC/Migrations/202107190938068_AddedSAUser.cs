@@ -1,0 +1,16 @@
+namespace RealsourceMVC.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class AddedSAUser : DbMigration
+    {
+        public override void Up()
+        {
+        }
+        
+        public override void Down()
+        {
+        }
+    }
+}

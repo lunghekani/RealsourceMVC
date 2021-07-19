@@ -177,6 +177,10 @@
     <Compile Include="Migrations\202107190905021_Initial.Designer.cs">
       <DependentUpon>202107190905021_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107190938068_AddedSAUser.cs" />
+    <Compile Include="Migrations\202107190938068_AddedSAUser.Designer.cs">
+      <DependentUpon>202107190938068_AddedSAUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -262,6 +266,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202107190905021_Initial.resx">
       <DependentUpon>202107190905021_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107190938068_AddedSAUser.resx">
+      <DependentUpon>202107190938068_AddedSAUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
