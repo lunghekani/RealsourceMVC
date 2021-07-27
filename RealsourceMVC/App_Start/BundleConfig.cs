@@ -19,12 +19,29 @@ namespace RealsourceMVC
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+            bundles.Add(new Bundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/login/").Include(
+                "~/Scripts/vendors/iconfonts/font-awesome/css/all.min.css",
+                "~/Scripts/vendors/css/vendor.bundle.base.css",
+                "~/Scripts/vendors/css/vendor.bundle.addons.css",
+                "~/Content/style.css"
+                ));
+
+            bundles.Add(new StyleBundle("~/Scripts/login/").Include(
+                "~/Scripts/vendors/js/vendor.bundle.base.js",
+                "~/Scripts/vendors/js/vendor.bundle.addons.js",
+                "~/Scripts/js/off-canvas.js",
+                "~/Scripts/js/hoverable-collapse.js",
+                "~/Scripts/js/misc.js",
+                "~/Scripts/js/settings.js",
+                "~/Scripts/js/todolist.js"
+                ));
         }
     }
 }

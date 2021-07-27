@@ -58,11 +58,11 @@ namespace RealsourceMVC
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "1075966732319-1il1nr35j33vl0vtoit8sbautr7s4l2f.apps.googleusercontent.com",
+                ClientSecret = "Agg67hyMvpA7ERZWdr4xpO_h"
+            });
         }
     }
 }

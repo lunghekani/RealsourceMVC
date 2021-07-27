@@ -1,0 +1,84 @@
+﻿@{
+    Layout = null;
+}
+
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item nav-profile">
+            <div class="nav-link">
+                <div class="profile-image">
+                    <img src="/Content/images/faces/face5.jpg" alt="image" />
+                </div>
+                <div class="profile-name">
+                    <p class="name">
+                        Welcome Jane
+                    </p>
+                    <p class="designation">
+                        Super Admin
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index-2.html">
+                <i class="fa fa-home menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="customers">
+                <i class="fas fa-users menu-icon"></i>
+                <span class="menu-title">Customers</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="customers">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="#">View All</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="experts">
+                <i class="fas fa-user-graduate menu-icon"></i>
+                <span class="menu-title">Experts</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="experts">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">View All</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="orders">
+                <i class="fas fa-pen-square menu-icon"></i>
+                <span class="menu-title">Orders</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="orders">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"><a class="nav-link" href="pages/forms/text_editor.html">View All</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="blog">
+                <i class="fas fa-code menu-icon"></i>
+                <span class="menu-title">Blog</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="blog">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="#">View All</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Create New</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <i class="far fa-file-alt menu-icon"></i>
+                <span class="menu-title">Documentation</span>
+            </a>
+        </li>
+    </ul>
+</nav>
