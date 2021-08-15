@@ -1,0 +1,328 @@
+﻿
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Dashboard</h2>
+<div class="row">
+    <div class="col-md-6 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-0">Statistics</h4>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-inline-block pt-3">
+                        <div class="d-md-flex">
+                            <h2 class="mb-0">R10,200</h2>
+                            <div class="d-flex align-items-center ml-md-2 mt-2 mt-md-0">
+                                <i class="far fa-clock text-muted"></i>
+                                <small class=" ml-1 mb-0">Updated: 9:10am</small>
+                            </div>
+                        </div>
+                        <small class="text-gray">Raised from 89 orders.</small>
+                    </div>
+                    <div class="d-inline-block">
+                        <i class="fas fa-chart-pie text-info icon-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-0">Daily Order</h4>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-inline-block pt-3">
+                        <div class="d-md-flex">
+                            <h2 class="mb-0">R2256</h2>
+                            <div class="d-flex align-items-center ml-md-2 mt-2 mt-md-0">
+                                <i class="far fa-clock text-muted"></i>
+                                <small class="ml-1 mb-0">Updated: 05:42pm</small>
+                            </div>
+                        </div>
+                        <small class="text-gray">hey, let’s have lunch together</small>
+                    </div>
+                    <div class="d-inline-block">
+                        <i class="fas fa-shopping-cart text-danger icon-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+@*Sales Table Card*@
+<div class="col-md-7 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">
+                <i class="fas fa-table"></i>
+                Sales Data
+            </h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Item code</th>
+                        <th>Orders</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="font-weight-bold">
+                            Clifford Wilson
+                        </td>
+                        <td class="text-muted">
+                            PT613
+                        </td>
+                        <td>
+                            350
+                        </td>
+                        <td>
+                            <label class="badge badge-success badge-pill">Dispatched</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold">
+                            Mary Payne
+                        </td>
+                        <td class="text-muted">
+                            ST456
+                        </td>
+                        <td>
+                            520
+                        </td>
+                        <td>
+                            <label class="badge badge-warning badge-pill">Processing</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold">
+                            Adelaide Blake
+                        </td>
+                        <td class="text-muted">
+                            CS789
+                        </td>
+                        <td>
+                            830
+                        </td>
+                        <td>
+                            <label class="badge badge-danger badge-pill">Failed</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold">
+                            Adeline King
+                        </td>
+                        <td class="text-muted">
+                            LP908
+                        </td>
+                        <td>
+                            579
+                        </td>
+                        <td>
+                            <label class="badge badge-primary badge-pill">Delivered</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold">
+                            Bertie Robbins
+                        </td>
+                        <td class="text-muted">
+                            HF675
+                        </td>
+                        <td>
+                            790
+                        </td>
+                        <td>
+                            <label class="badge badge-info badge-pill">On Hold</label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@*Chart Sales Card*@
+<div class="col-md-5 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Updates</h4>
+            <ul class="solid-bullet-list">
+                <li>
+                    <h6>User confirmation</h6>
+                    <p>Lorem Ipsum is simply dummy text of the printing </p>
+                    <p class="text-muted">
+                        <i class="far fa-clock"></i>
+                        7 months ago.
+                    </p>
+                </li>
+                <li>
+                    <h6>Continuous evaluation</h6>
+                    <p>Lorem Ipsum is simply dummy text of the printing </p>
+                    <p class="text-muted">
+                        <i class="far fa-clock"></i>
+                        7 months ago.
+                    </p>
+                </li>
+                <li>
+                    <h6>Promotion</h6>
+                    <p>Lorem Ipsum is simply dummy text of the printing </p>
+                    <p class="text-muted">
+                        <i class="far fa-clock"></i>
+                        7 months ago.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row">
+
+<div class="col-md-12 grid=margin stretch-card">
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Users</h4>
+        <p class="card-description">
+            List of all users
+        </p>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            User
+                        </th>
+                        <th>
+                            First name
+                        </th>
+                        <th>
+                            Email
+                        </th>
+                        <th>
+                            Role
+                        </th>
+                        <th>
+                            Last Login
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-1">
+                            <img src="https://images.unsplash.com/photo-1611604548018-d56bbd85d681?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;q=80" alt="image" />
+                        </td>
+                        <td>
+                            Lunghekani Langa
+                        </td>
+                        <td>
+                           lunghivlanga@gmail.com
+                        </td>
+                        <td>
+                            <label class="badge badge-danger badge-pill">Admin</label>
+                        </td>
+                        <td>
+                            May 15, 2021
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face2.jpg" alt="image" />
+                        </td>
+                        <td>
+                            Safwaan Patel
+                        </td>
+                        <td>
+                            safupatel68@gmail.com
+                        </td>
+                        <td>
+                            <label class="badge badge-success badge-pill">Writer</label>
+                        </td>
+                        <td>
+                            July 1, 2021
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face3.jpg" alt="image" />
+                        </td>
+                        <td>
+                            Lloyd Radebe
+                        </td>
+                        <td>
+                            radebelloydm@gmail.com
+                        </td>
+                        <td>
+                            <label class="badge badge-info badge-pill">Student</label>
+                        </td>
+                        <td>
+                            Apr 12, 2021
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face4.jpg" alt="image" />
+                        </td>
+                        <td>
+                            Candice Baleni
+                        </td>
+                        <td>
+                            candicebaleni@yahoo.com
+                        </td>
+                        <td>
+                            <label class="badge badge-info badge-pill">Student</label>
+                        </td>
+                        <td>
+                            May 15, 2021
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face5.jpg" alt="image" />
+                        </td>
+                        <td>
+                            Thando Ntshangase
+                        </td>
+                        <td>
+                            nts.thando@icloud.com
+                        </td>
+                        <td>
+                            <label class="badge badge-success badge-pill">Writer</label>
+                        </td>
+                        <td>
+                            May 03, 2021
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-1">
+                            <img src="../../images/faces/face6.jpg" alt="image" />
+                        </td>
+                        <td>
+                            Makungu Mvashele
+                        </td>
+                        <td>
+                            makungu@gmail.com
+                        </td>
+                        <td>
+                            <label class="badge badge-success badge-pill">Writer</label>
+                        </td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+            
+
