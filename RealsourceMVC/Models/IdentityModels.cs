@@ -29,5 +29,7 @@ namespace RealsourceMVC.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<RealsourceMVC.Models.CustomerModel> CustomerModels { get; set; }
     }
 }
